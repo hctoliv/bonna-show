@@ -68,7 +68,7 @@ html.seen .poweron{display:none}
 .set-glow{position:absolute;inset:0;background:radial-gradient(30% 40% at 72% 30%,rgba(255,200,36,.28),transparent 70%)}
 .set-grid{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.035) 0 1px,transparent 1px 4px);mix-blend-mode:overlay}
 .set-word{position:absolute;z-index:-1;right:-2%;top:6%;font-weight:900;font-variation-settings:"wdth" 125;font-size:clamp(6rem,21vw,19rem);line-height:.8;color:rgba(255,255,255,.07);letter-spacing:-.02em;white-space:nowrap;user-select:none}
-.host{position:absolute;right:4%;bottom:0;height:88%;width:auto;max-width:none;filter:drop-shadow(0 20px 40px rgba(0,0,0,.45))}
+.host{position:absolute;right:4%;bottom:0;height:88%;width:auto;max-width:none;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%),linear-gradient(180deg,#000 70%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,transparent 0,#000 16%,#000 84%,transparent 100%),linear-gradient(180deg,#000 70%,transparent 100%);mask-composite:intersect}
 .osd-top{position:absolute;left:3%;top:5%;display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.78rem;font-weight:700;letter-spacing:.08em}
 .live{display:inline-flex;align-items:center;gap:7px;background:rgba(0,0,0,.55);padding:.45em .8em;border-radius:6px}
 .osd-ch{color:rgba(255,255,255,.75)}
@@ -105,7 +105,7 @@ a.slate-link:hover{color:var(--gold)}
 /* perfil */
 .perfil{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center}
 .perfil-photo{position:relative;border-radius:var(--r);overflow:hidden;border:1px solid var(--line-2)}
-.perfil-photo img{width:100%;aspect-ratio:1;object-fit:cover}
+.perfil-photo img{width:100%;aspect-ratio:1;object-fit:cover;object-position:50% 50%}
 .perfil-photo figcaption{position:absolute;left:14px;bottom:14px;background:rgba(8,7,13,.82);font-family:var(--mono);font-size:.75rem;padding:.4em .7em;border-radius:6px;letter-spacing:.06em}
 .perfil-photo figcaption span{color:var(--red);font-weight:700;margin-right:.4em}
 .ficha{margin-top:2rem;border-top:1px solid var(--line-2)}
