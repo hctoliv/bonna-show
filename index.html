@@ -3,257 +3,243 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Bonna Show & Amigos | Bonna do SBT</title>
+<title>Bonna do SBT | Apresentador, empresário e produtor</title>
 <meta name="description" content="Bonna do SBT, apresentador do Bonna Show & Amigos no Com Brasil TV e na TV Libertas. Empresário, produtor artístico e diretor de cidades do Cidade S/A.">
-<meta property="og:title" content="Bonna Show & Amigos">
-<meta property="og:description" content="Com Brasil TV, terças 14h. TV Libertas, sábados 21h. Programas completos no YouTube.">
-<meta property="og:image" content="img/outdoor.jpg">
-<meta name="theme-color" content="#140838">
-<link rel="icon" href="img/logo.png">
+<meta property="og:title" content="Bonna do SBT">
+<meta property="og:description" content="Apresentador, empresário e produtor artístico. Bonna Show & Amigos no Com Brasil TV e na TV Libertas.">
+<meta property="og:image" content="img/bonna-perfil.webp">
+<meta name="theme-color" content="#08070d">
+<link rel="icon" href="img/bonna-perfil.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,800;1,800&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
-<!-- vinheta -->
-<div class="intro" id="intro" aria-hidden="true">
-  <div class="intro-beams"><i></i><i></i><i></i><i></i><i></i></div>
-  <img class="intro-logo" src="img/logo.png" alt="">
-  <div class="intro-onair"><span></span>NO AR</div>
-</div>
+<div class="poweron" id="poweron" aria-hidden="true"><i></i></div>
 
 <header class="hd" id="hd">
-  <a class="hd-logo" href="#topo" aria-label="Bonna Show & Amigos"><img src="img/logo.png" alt="Programa Bonna Show e Amigos" width="789" height="406"></a>
-  <nav class="hd-nav" id="nav">
-    <a href="#tv">Programa</a>
-    <a href="#grade">Onde assistir</a>
-    <a href="#episodios">Episódios</a>
-    <a href="#cidade">Cidade S/A</a>
-    <a href="#historia">Bonna</a>
-    <a class="hd-cta" href="#anuncie">Anuncie</a>
+  <a class="brand" href="#topo" aria-label="Bonna do SBT, início">
+    <span class="brand-name">BONNA</span>
+    <span class="brand-sub">do SBT</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a href="#perfil"><span>01</span>Perfil</a>
+    <a href="#programa"><span>02</span>Programa</a>
+    <a href="#episodios"><span>03</span>Episódios</a>
+    <a href="#estrada"><span>04</span>Na estrada</a>
+    <a href="#bastidores"><span>05</span>Bastidores</a>
+    <a href="#contato" class="nav-cta">Trabalhe com o Bonna</a>
   </nav>
-  <button class="hd-burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
+  <div class="hd-live"><span class="rec"></span><span id="clock">--:--</span></div>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span></button>
 </header>
 
 <main>
 
-<!-- HERO -->
-<section class="hero" id="topo">
-  <div class="stars" aria-hidden="true"></div>
-  <div class="spots" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div class="hero-word" aria-hidden="true" data-par="0.25">BONNA</div>
-  <figure class="hero-fig" data-par="-0.08">
-    <img src="img/bonna.webp" alt="Bonna do SBT sorrindo, de boné preto e corrente dourada" width="1254" height="1076">
-  </figure>
-  <div class="hero-copy">
-    <p class="onair"><span class="dot"></span><span id="nextLabel">Próxima exibição</span> <b id="nextWhen">...</b></p>
-    <h1>Bonna Show<br><em>&amp; Amigos</em></h1>
-    <p class="hero-sub">Apresentador, empresário e produtor artístico. O <b>“Bonna do SBT”</b>, apelido que veio de Silvio Santos.</p>
-    <div class="hero-btns">
-      <a class="btn btn-gold" href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">▶ Assista ao Bonna Show</a>
-      <a class="btn btn-line" href="#anuncie">Anuncie no programa</a>
+<!-- TRANSMISSÃO -->
+<section class="broadcast" id="topo">
+  <div class="screen">
+    <div class="set" aria-hidden="true"><div class="set-glow"></div><div class="set-grid"></div></div>
+    <div class="set-word" aria-hidden="true">BONNA</div>
+    <img class="host" src="img/bonna.webp" alt="Bonna do SBT sorrindo, de boné preto e corrente dourada" width="1254" height="1076" fetchpriority="high">
+
+    <div class="osd-top">
+      <span class="live"><span class="rec"></span>AO VIVO</span>
+      <span class="osd-ch">CANAL BONNA</span>
+    </div>
+    <img class="bug" src="img/logo.png" alt="Programa Bonna Show e Amigos" width="829" height="446">
+
+    <div class="hero-copy">
+      <p class="eyebrow">Apresentador · Empresário · Produtor artístico</p>
+      <h1>O Bonna<br>que o Brasil<br>conhece da TV.</h1>
+    </div>
+
+    <div class="gc">
+      <div class="gc-name">BONNA DO SBT</div>
+      <div class="gc-role">Apresentador do <b>Bonna Show &amp; Amigos</b> · Com Brasil TV e TV Libertas</div>
+    </div>
+
+    <div class="crawl" aria-label="Destaques">
+      <span class="crawl-tag">AGORA</span>
+      <div class="crawl-win"><div class="crawl-track">
+        <span>Com Brasil TV, terças às 14h</span><i>●</i>
+        <span>TV Libertas, sábados às 21h</span><i>●</i>
+        <span>Programa 99 no ar: Catedral de Pouso Alegre</span><i>●</i>
+        <span>Cidade S/A com o Comandante Hamilton</span><i>●</i>
+        <span>52 mil seguidores no Instagram</span><i>●</i>
+        <span>Com Brasil TV, terças às 14h</span><i>●</i>
+        <span>TV Libertas, sábados às 21h</span><i>●</i>
+        <span>Programa 99 no ar: Catedral de Pouso Alegre</span><i>●</i>
+        <span>Cidade S/A com o Comandante Hamilton</span><i>●</i>
+        <span>52 mil seguidores no Instagram</span><i>●</i>
+      </div></div>
     </div>
   </div>
-  <div class="hero-monitor" aria-hidden="true">
-    <video src="media/loop-estudio.mp4" muted loop playsinline autoplay preload="metadata"></video>
-    <span>AO VIVO NO ESTÚDIO</span>
+
+  <div class="controls">
+    <a class="btn btn-gold" href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">▶ Assistir programas</a>
+    <a class="btn btn-ghost" href="#contato">Anunciar com o Bonna</a>
+    <p class="next"><span>Próxima exibição</span><b id="nextWhen">...</b></p>
   </div>
 </section>
 
-<div class="ticker" aria-label="Grade">
-  <div class="ticker-track">
-    <span>📺 Com Brasil TV <b>Terças, 14h</b></span><span>★</span>
-    <span>📡 TV Libertas <b>Sábados, 21h</b></span><span>★</span>
-    <span>▶ Programas completos no <b>YouTube</b></span><span>★</span>
-    <span>🚁 Cidade S/A com <b>Comandante Hamilton</b></span><span>★</span>
-    <span>📺 Com Brasil TV <b>Terças, 14h</b></span><span>★</span>
-    <span>📡 TV Libertas <b>Sábados, 21h</b></span><span>★</span>
-    <span>▶ Programas completos no <b>YouTube</b></span><span>★</span>
-    <span>🚁 Cidade S/A com <b>Comandante Hamilton</b></span><span>★</span>
-  </div>
-</div>
-
-<!-- TV / ZAPPING -->
-<section class="tv-sec" id="tv">
-  <div class="wrap tv-grid">
-    <div class="tv-intro">
-      <p class="kicker">Pega o controle</p>
-      <h2>Zapeia pelas chamadas do programa</h2>
-      <p>Entrevistas, histórias e sucesso. O Bonna vai até as cidades, as empresas e os amigos, e leva tudo pra TV.</p>
-      <ol class="ch-list" id="chList">
-        <li><button data-ch="0" class="on"><b>01</b> Com Brasil TV <small>estúdio</small></button></li>
-        <li><button data-ch="1"><b>02</b> Bona &amp; Uai Veículos <small>reportagem</small></button></li>
-        <li><button data-ch="2"><b>03</b> Bonna no estúdio <small>chamada</small></button></li>
-      </ol>
+<!-- 01 PERFIL -->
+<section class="sec" id="perfil">
+  <div class="wrap">
+    <header class="slate"><span class="slate-ch">CH 01</span><span class="slate-t">Perfil</span><span class="slate-line"></span></header>
+    <div class="perfil">
+      <figure class="perfil-photo">
+        <img src="img/bonna-perfil.webp" alt="Retrato do Bonna sorrindo, fundo colorido" width="900" height="900" loading="lazy">
+        <figcaption><span>REC</span> Bonna do SBT</figcaption>
+      </figure>
+      <div class="perfil-txt">
+        <h2>Bonna do SBT, por Silvio Santos.</h2>
+        <p class="lead">O apelido veio do Silvio e virou nome artístico. Hoje o Bonna apresenta o Bonna Show &amp; Amigos, roda o interior com o Cidade S/A e segue fazendo o que faz desde 2002: acreditar em artista, em cidade e em gente que faz acontecer.</p>
+        <dl class="ficha">
+          <div><dt>Na TV</dt><dd>Apresentador no Com Brasil TV e na TV Libertas</dd></div>
+          <div><dt>Negócios</dt><dd>Empresário e produtor artístico</dd></div>
+          <div><dt>Cidades</dt><dd>Diretor de cidades do Cidade S/A, com o Comandante Hamilton</dd></div>
+          <div><dt>Fé</dt><dd>Pulseira do Bem, unindo amigos pela oração do Pai Nosso</dd></div>
+        </dl>
+      </div>
     </div>
-    <div class="tv">
-      <div class="tv-body">
-        <div class="tv-screen">
+    <ul class="stats">
+      <li><b>99</b><span>programas no ar</span></li>
+      <li><b>52<small>mil</small></b><span>seguidores no Instagram</span></li>
+      <li><b>2002</b><span>empresariando artistas</span></li>
+      <li><b>+50<small>mi</small></b><span>de alcance do sinal Com Brasil</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 02 PROGRAMA -->
+<section class="sec sec-alt" id="programa">
+  <div class="wrap">
+    <header class="slate"><span class="slate-ch">CH 02</span><span class="slate-t">Bonna Show &amp; Amigos</span><span class="slate-line"></span></header>
+    <div class="prog">
+      <div class="player">
+        <div class="player-screen">
           <video id="tvVideo" playsinline preload="none" poster="media/tv-combrasil.jpg"></video>
           <canvas id="tvNoise" aria-hidden="true"></canvas>
-          <div class="tv-osd" id="tvOsd">CH 01</div>
-          <button class="tv-sound" id="tvSound" aria-label="Ligar som">🔇 Ligar som</button>
+          <span class="player-ch" id="tvOsd">CH 01</span>
+          <button class="player-sound" id="tvSound">🔇 Som</button>
         </div>
-        <div class="tv-remote" aria-label="Controle">
-          <button id="chDown" aria-label="Canal anterior">CH −</button>
-          <span class="tv-led"></span>
-          <button id="chUp" aria-label="Próximo canal">CH +</button>
+        <div class="player-bar">
+          <button id="chDown" aria-label="Chamada anterior">◀ CH</button>
+          <span class="player-title" id="tvTitle">Chamada no estúdio do Com Brasil</span>
+          <button id="chUp" aria-label="Próxima chamada">CH ▶</button>
         </div>
+      </div>
+
+      <div class="guide">
+        <p class="guide-h">Grade de programação</p>
+        <div class="guide-row" data-day="2">
+          <span class="guide-time">TER<b>14:00</b></span>
+          <span class="guide-show"><b>Bonna Show &amp; Amigos</b>Com Brasil TV</span>
+          <span class="guide-flag"></span>
+        </div>
+        <div class="guide-row" data-day="6">
+          <span class="guide-time">SÁB<b>21:00</b></span>
+          <span class="guide-show"><b>Bonna Show &amp; Amigos</b>TV Libertas</span>
+          <span class="guide-flag"></span>
+        </div>
+        <a class="guide-row guide-yt" href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">
+          <span class="guide-time">24H<b>▶</b></span>
+          <span class="guide-show"><b>Programas completos</b>YouTube</span>
+          <span class="guide-flag guide-arrow">→</span>
+        </a>
+        <p class="guide-h guide-h2">Com Brasil TV nas operadoras</p>
+        <ul class="ops">
+          <li>SKY <b>28</b></li><li>Oi <b>28</b></li><li>Claro <b>03</b></li><li>Vivo <b>239</b></li><li>Nossa TV <b>20</b></li>
+          <li class="app">Fire TV</li><li class="app">Roku</li><li class="app">Olá TV</li><li class="app">Easy TV</li><li class="app">Soul TV</li><li class="app">CDN TV</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- GRADE -->
-<section class="grade" id="grade">
+<!-- 03 EPISODIOS -->
+<section class="sec" id="episodios">
   <div class="wrap">
-    <p class="kicker">Onde assistir</p>
-    <h2>Na TV, nas operadoras e no seu celular</h2>
-    <div class="grade-cards">
-      <article class="gcard" data-day="2" data-hour="14">
-        <span class="gcard-tag">Com Brasil TV</span>
-        <strong>Terças</strong>
-        <span class="gcard-time">14h</span>
-        <p>Sinal nacional, nas operadoras e nos apps de TV.</p>
-      </article>
-      <article class="gcard" data-day="6" data-hour="21">
-        <span class="gcard-tag">TV Libertas</span>
-        <strong>Sábados</strong>
-        <span class="gcard-time">21h</span>
-        <p>O programa completo no horário nobre do fim de semana.</p>
-      </article>
-      <a class="gcard gcard-yt" href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">
-        <span class="gcard-tag">YouTube</span>
-        <strong>Quando quiser</strong>
-        <span class="gcard-time">▶</span>
-        <p>Todos os programas completos no canal.</p>
-      </a>
-    </div>
-
-    <div class="reach">
-      <div class="reach-num"><span>+50</span><small>milhões</small></div>
-      <p>de telespectadores e internautas alcançados pelo sinal do Com Brasil, de norte a sul do país.</p>
-    </div>
-
-    <div class="ops">
-      <p class="ops-title">Com Brasil TV nas operadoras</p>
-      <ul>
-        <li><b>SKY</b><span>28</span></li>
-        <li><b>Oi</b><span>28</span></li>
-        <li><b>Claro</b><span>03</span></li>
-        <li><b>Vivo</b><span>239</span></li>
-        <li><b>Nossa TV</b><span>20</span></li>
-        <li class="app"><b>Fire TV</b></li>
-        <li class="app"><b>Roku</b></li>
-        <li class="app"><b>Olá TV</b></li>
-        <li class="app"><b>Easy TV</b></li>
-        <li class="app"><b>Soul TV</b></li>
-        <li class="app"><b>CDN TV</b></li>
-      </ul>
-    </div>
+    <header class="slate"><span class="slate-ch">CH 03</span><span class="slate-t">Episódios</span><span class="slate-line"></span>
+      <a class="slate-link" href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">Ver todos no YouTube →</a></header>
+    <div class="eps" id="eps"></div>
   </div>
 </section>
 
-<!-- EPISODIOS -->
-<section class="eps" id="episodios">
-  <div class="wrap eps-head">
-    <div>
-      <p class="kicker">Episódios</p>
-      <h2>Quase 100 programas no ar</h2>
-    </div>
-    <div class="eps-nav">
-      <button id="epsPrev" aria-label="Voltar">←</button>
-      <button id="epsNext" aria-label="Avançar">→</button>
-    </div>
-  </div>
-  <div class="eps-track" id="epsTrack"></div>
-</section>
-
-<!-- BASTIDORES -->
-<section class="reels" id="bastidores">
+<!-- 04 NA ESTRADA -->
+<section class="sec sec-alt" id="estrada">
   <div class="wrap">
-    <p class="kicker">Bastidores</p>
-    <h2>Por trás das câmeras</h2>
-    <p class="lead">Toque num vídeo pra assistir com som.</p>
-  </div>
-  <div class="reels-row">
-    <figure class="reel" data-src="media/r-bastidor.mp4"><video poster="media/r-bastidor.jpg" playsinline loop muted preload="none"></video><figcaption>Gravação com os amigos</figcaption></figure>
-    <figure class="reel" data-src="media/r-hamilton.mp4"><video poster="media/r-hamilton.jpg" playsinline loop muted preload="none"></video><figcaption>Alô, Jacutinga! Recado do Comandante Hamilton</figcaption></figure>
-    <figure class="reel" data-src="media/r-jacutinga.mp4"><video poster="media/r-jacutinga.jpg" playsinline loop muted preload="none"></video><figcaption>Jacutinga vai viver um grande evento</figcaption></figure>
-    <figure class="reel" data-src="media/r-cidadesa.mp4"><video poster="media/r-cidadesa.jpg" playsinline loop muted preload="none"></video><figcaption>2º bastidor do Cidade S.A em Jacutinga/MG</figcaption></figure>
-  </div>
-</section>
-
-<!-- CIDADE S/A -->
-<section class="cidade" id="cidade">
-  <div class="stars" aria-hidden="true"></div>
-  <div class="wrap cidade-in">
-   <div class="cidade-txt">
-    <p class="kicker">🚁 Diretor de Cidades</p>
-    <h2>Cidade S/A<br><span>com o Comandante Hamilton</span></h2>
-    <p class="lead">O Bonna dirige a passagem do projeto pelas cidades: helicóptero, brindes, atrações e muita diversão pra família inteira.</p>
-    <div class="cidade-stops">
-      <div class="stop"><b>Jacutinga, MG</b><span>12/10, Dia das Crianças no Estádio Municipal</span></div>
-      <div class="stop"><b>Bueno Brandão, MG</b><span>Programa 96</span></div>
-      <div class="stop"><b>Ouro Fino, MG</b><span>Rodeio de Ouro Fino, programa 94</span></div>
+    <header class="slate"><span class="slate-ch">CH 04</span><span class="slate-t">Na estrada · Cidade S/A</span><span class="slate-line"></span></header>
+    <div class="road">
+      <div class="road-txt">
+        <h2>O Bonna leva a TV pra cidade.</h2>
+        <p class="lead">Como diretor de cidades do Cidade S/A, ele organiza a chegada do projeto com o Comandante Hamilton: passeio de helicóptero, brindes, atrações e festa pra família inteira. E tudo vira programa.</p>
+        <ol class="stops">
+          <li><span class="stops-n">98</span><div><b>Jacutinga, MG</b><small>Dia das Crianças no Estádio Municipal, 12/10</small></div></li>
+          <li><span class="stops-n">96</span><div><b>Bueno Brandão, MG</b><small>Comandante Hamilton na cidade</small></div></li>
+          <li><span class="stops-n">94</span><div><b>Ouro Fino, MG</b><small>Rodeio de Ouro Fino</small></div></li>
+          <li><span class="stops-n">99</span><div><b>Pouso Alegre, MG</b><small>Catedral de Pouso Alegre</small></div></li>
+        </ol>
+        <blockquote>“Dia das crianças ficou um dia marcado na vida das crianças de Jacutinga.”</blockquote>
+      </div>
+      <figure class="road-vid">
+        <video src="media/loop-multidao.mp4" muted loop playsinline preload="none" class="autoplay"></video>
+        <figcaption><span class="rec"></span>Jacutinga, MG</figcaption>
+      </figure>
     </div>
-    <blockquote>“Dia das crianças ficou um dia marcado na vida das crianças de Jacutinga.”</blockquote>
-   </div>
-   <figure class="cidade-vid">
-     <video class="cidade-bg" src="media/loop-multidao.mp4" muted loop playsinline preload="none" data-lazy></video>
-     <figcaption><span class="dot"></span> Jacutinga, MG · 12/10</figcaption>
-   </figure>
   </div>
 </section>
 
-<!-- HISTORIA -->
-<section class="hist" id="historia">
-  <div class="wrap hist-grid">
-    <div class="hist-side">
-      <p class="kicker">Quem é o Bonna</p>
-      <h2>Bonna do SBT, por Silvio Santos</h2>
-      <p>Apresentador no Com Brasil TV, empresário e produtor artístico. Há mais de vinte anos acreditando em artista, em cidade do interior e em gente que faz acontecer.</p>
-      <div class="hist-tags"><span>📺 Apresentador</span><span>🎬 Empresário</span><span>🎤 Produtor artístico</span><span>🚁 Diretor de cidades</span></div>
+<!-- 05 BASTIDORES -->
+<section class="sec" id="bastidores">
+  <div class="wrap">
+    <header class="slate"><span class="slate-ch">CH 05</span><span class="slate-t">Bastidores</span><span class="slate-line"></span><span class="slate-link">Toque pra ouvir</span></header>
+    <div class="reels">
+      <figure class="reel" data-src="media/r-bastidor.mp4"><video poster="media/r-bastidor.jpg" playsinline loop preload="none"></video><figcaption>Gravação com os amigos</figcaption></figure>
+      <figure class="reel" data-src="media/r-hamilton.mp4"><video poster="media/r-hamilton.jpg" playsinline loop preload="none"></video><figcaption>Recado do Comandante Hamilton</figcaption></figure>
+      <figure class="reel" data-src="media/r-jacutinga.mp4"><video poster="media/r-jacutinga.jpg" playsinline loop preload="none"></video><figcaption>Jacutinga vai viver um grande evento</figcaption></figure>
+      <figure class="reel" data-src="media/r-cidadesa.mp4"><video poster="media/r-cidadesa.jpg" playsinline loop preload="none"></video><figcaption>Bastidor do Cidade S/A</figcaption></figure>
     </div>
-    <ol class="tl">
-      <li><span class="tl-y">2002</span><div><b>Empresário de banda em Minas</b><p>Shows todo fim de semana e álbum produzido no estúdio. Um dos músicos lembra: “ele sem dúvida acreditou muito na gente”.</p></div></li>
-      <li><span class="tl-y">SBT</span><div><b>Nasce o “Bonna do SBT”</b><p>O apelido que veio de Silvio Santos virou nome artístico.</p></div></li>
-      <li><span class="tl-y">TV</span><div><b>Bonna Show &amp; Amigos</b><p>Entrevistas, histórias e sucesso no Com Brasil TV e na TV Libertas. Rota do Sabor, Café e Charretes, reportagens nas empresas da região.</p></div></li>
-      <li><span class="tl-y">2026</span><div><b>Programa 99</b><p>Da Catedral de Pouso Alegre ao Cidade S/A, com o Comandante Hamilton.</p></div></li>
-      <li><span class="tl-y">🙏</span><div><b>Pulseira do Bem</b><p>Unindo amigos no mundo pela oração do Pai Nosso. “Sem Deus nós não somos nada.”</p></div></li>
-    </ol>
   </div>
 </section>
 
-<!-- ANUNCIE -->
-<section class="ads" id="anuncie">
-  <div class="wrap ads-grid">
-    <figure class="ads-img">
-      <img src="img/outdoor.jpg" alt="Outdoor do Bonna Show & Amigos em Bueno Brandão" loading="lazy" width="1400" height="848">
-      <figcaption>Outdoor em Bueno Brandão, MG</figcaption>
-    </figure>
-    <div class="ads-form-wrap">
-      <p class="kicker">Anuncie no Bonna Show</p>
-      <h2>Sua marca na TV, do jeito do Bonna</h2>
-      <form class="ads-form" id="adsForm">
+<!-- 06 CONTATO -->
+<section class="sec sec-alt" id="contato">
+  <div class="wrap">
+    <header class="slate"><span class="slate-ch">CH 06</span><span class="slate-t">Trabalhe com o Bonna</span><span class="slate-line"></span></header>
+    <div class="biz">
+      <div class="biz-l">
+        <h2>Sua marca no programa, com a cara do Bonna.</h2>
+        <ul class="offers">
+          <li><b>Reportagem</b><span>O Bonna vai até a sua empresa e mostra tudo no programa, como fez na Uai Veículos e na Helton Malhas.</span></li>
+          <li><b>Merchan</b><span>Sua marca falada pelo apresentador, no ar no Com Brasil e na TV Libertas.</span></li>
+          <li><b>Patrocínio</b><span>Cota no Bonna Show &amp; Amigos, com presença nos episódios.</span></li>
+          <li><b>Eventos</b><span>Presença do Bonna e do Cidade S/A na sua cidade.</span></li>
+        </ul>
+        <figure class="biz-proof">
+          <img src="img/outdoor.jpg" alt="Outdoor do Bonna Show & Amigos em Bueno Brandão" width="1400" height="848" loading="lazy">
+          <figcaption>Outdoor em Bueno Brandão, MG</figcaption>
+        </figure>
+      </div>
+      <form class="form" id="form">
+        <p class="form-h">Fale com a produção</p>
         <fieldset>
-          <legend>O que você procura?</legend>
+          <legend>Interesse</legend>
           <div class="chips">
-            <label><input type="radio" name="fmt" value="Reportagem na minha empresa" checked><span>Reportagem na minha empresa</span></label>
-            <label><input type="radio" name="fmt" value="Merchan no programa"><span>Merchan no programa</span></label>
-            <label><input type="radio" name="fmt" value="Cota de patrocínio"><span>Cota de patrocínio</span></label>
-            <label><input type="radio" name="fmt" value="Evento na minha cidade"><span>Evento na minha cidade</span></label>
+            <label><input type="radio" name="fmt" value="Reportagem" checked><span>Reportagem</span></label>
+            <label><input type="radio" name="fmt" value="Merchan"><span>Merchan</span></label>
+            <label><input type="radio" name="fmt" value="Patrocínio"><span>Patrocínio</span></label>
+            <label><input type="radio" name="fmt" value="Evento"><span>Evento</span></label>
           </div>
         </fieldset>
-        <div class="row2">
-          <label class="fld"><span>Seu nome</span><input name="nome" required autocomplete="name"></label>
-          <label class="fld"><span>Empresa</span><input name="empresa" autocomplete="organization"></label>
-        </div>
+        <label class="fld"><span>Seu nome</span><input name="nome" required autocomplete="name"></label>
+        <label class="fld"><span>Empresa</span><input name="empresa" autocomplete="organization"></label>
         <label class="fld"><span>Cidade</span><input name="cidade" autocomplete="address-level2"></label>
         <button class="btn btn-gold btn-wide" type="submit">Chamar no WhatsApp</button>
-        <p class="ads-alt">Contato comercial: <a href="https://wa.me/5535999574977" target="_blank" rel="noopener">(35) 99957-4977</a></p>
+        <p class="form-alt">Comercial: <a href="https://wa.me/5535999574977" target="_blank" rel="noopener">(35) 99957-4977</a></p>
       </form>
     </div>
   </div>
@@ -263,14 +249,14 @@
 
 <footer class="ft">
   <div class="wrap ft-in">
-    <img src="img/logo.png" alt="Programa Bonna Show e Amigos" width="789" height="406" loading="lazy">
-    <div class="ft-links">
-      <a href="https://www.instagram.com/bonadosbt/" target="_blank" rel="noopener">Instagram @bonadosbt</a>
+    <a class="brand" href="#topo"><span class="brand-name">BONNA</span><span class="brand-sub">do SBT</span></a>
+    <nav class="ft-links">
+      <a href="https://www.instagram.com/bonadosbt/" target="_blank" rel="noopener">Instagram</a>
       <a href="https://www.youtube.com/channel/UCsnqmHgvWfZS90mHwf_QMbg" target="_blank" rel="noopener">YouTube</a>
       <a href="https://wa.me/5535998075560" target="_blank" rel="noopener">Anuncie (35) 99807-5560</a>
       <a href="https://wa.me/5535999574977" target="_blank" rel="noopener">Comercial (35) 99957-4977</a>
-    </div>
-    <p class="ft-small">Bonna Show &amp; Amigos · Com Brasil TV e TV Libertas</p>
+    </nav>
+    <img class="ft-logo" src="img/logo.png" alt="Programa Bonna Show e Amigos" width="829" height="446" loading="lazy">
   </div>
 </footer>
 
@@ -281,6 +267,6 @@
   </div>
 </div>
 
-<script src="main.js?v=1"></script>
+<script src="main.js?v=3"></script>
 </body>
 </html>
